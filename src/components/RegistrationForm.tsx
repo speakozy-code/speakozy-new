@@ -126,7 +126,6 @@ const RegistrationForm = () => {
                 <option value="البرنامج الجماعي">البرنامج الجماعي (Group)</option>
                 <option value="VIP Standard">VIP Mentorship — Standard (٦٠ دقيقة)</option>
                 <option value="VIP Premium">VIP Mentorship — Premium (٩٠ دقيقة)</option>
-                <option value="تقييم مستوى فقط">تقييم مستوى مجاني أولًا</option>
               </select>
             </div>
 

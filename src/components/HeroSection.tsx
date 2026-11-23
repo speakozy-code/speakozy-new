@@ -164,9 +164,9 @@ const HeroSection = () => (
               <Link to="/pricing" className="w-full sm:w-auto">
                 <Button variant="hero" size="lg" className="w-full text-lg px-10 py-7">شوف الباقات ←</Button>
               </Link>
-              <Link to="/register" className="w-full sm:w-auto">
-                <Button variant="heroOutline" size="lg" className="w-full text-lg px-10 py-7">احجز تحديد مستوى</Button>
-              </Link>
+              <a href="https://speakozy-learning.vercel.app/" target="_blank" rel="noreferrer" className="w-full sm:w-auto">
+                <Button variant="heroOutline" size="lg" className="w-full text-lg px-10 py-7">تسجيل الدخول</Button>
+              </a>
             </div>
           </Reveal>
         </div>
