@@ -10,10 +10,17 @@ const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     name: "", email: "", phone: "", course: "", level: "", notes: "",
   });
+  const [phoneError, setPhoneError] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const ph = formData.phone.replace(/[\s-]/g, "");
+    if (!/^(01[0125]\d{8}|\+[1-9]\d{7,14})$/.test(ph)) {
+      setPhoneError("لو رقمك مصري اكتبه 01XXXXXXXXX، ولو من دولة تانية لازم يبدأ بـ + وكود الدولة (مثال: +966501234567)");
+      return;
+    }
+    setPhoneError("");
     setStatus("loading");
 
     try {
@@ -107,11 +114,13 @@ const RegistrationForm = () => {
               <label className="block text-sm font-bold mb-2">رقم الموبايل *</label>
               <input
                 required
-                placeholder="01XXXXXXXXX"
+                dir="ltr"
+                placeholder="01XXXXXXXXX أو +966501234567"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 className={inputClass}
               />
+              {phoneError && <p className="text-sm text-red-500 mt-2">{phoneError}</p>}
             </div>
 
             <div>
