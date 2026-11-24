@@ -155,7 +155,7 @@ const HeroSection = () => (
             </h1>
           </Reveal>
           <Reveal delay={200}>
-            <p className="text-muted-foreground text-lg md:text-xl font-medium mb-4">مدربين محترفين · جلسات لايف · حد أقصى ٨ طلاب</p>
+            <p className="text-muted-foreground text-lg md:text-xl font-medium mb-4">مدربين محترفين · جلسات لايف · حد أقصى ٦ طلاب</p>
             <p className="text-muted-foreground text-sm mb-12">جلسات مباشرة على زووم + متابعة شخصية + تقييم دوري</p>
           </Reveal>
           
