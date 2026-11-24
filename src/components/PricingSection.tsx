@@ -55,13 +55,13 @@ const vipTiers = [
 ];
 
 const FeatureList = ({ items }: { items: string[] }) => (
-  <ul className="space-y-3.5">
+  <ul className="space-y-3 min-w-0">
     {items.map((feature) => (
       <li key={feature} className="flex items-start gap-3">
         <div className="bg-primary/10 rounded-full p-1 mt-0.5 shrink-0">
           <Check className="w-4 h-4 text-primary" />
         </div>
-        <span className="text-foreground font-medium leading-relaxed">{feature}</span>
+        <span className="text-foreground font-medium leading-relaxed text-sm sm:text-base min-w-0 break-words">{feature}</span>
       </li>
     ))}
   </ul>
@@ -90,19 +90,19 @@ const PricingSection = () => (
         {/* Group Program */}
         <Reveal>
           <article className="bg-card border border-border rounded-3xl p-4 sm:p-6 md:p-10 shadow-sm">
-            <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-12 items-start">
-              <div>
+            <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-12 items-start">
+              <div className="min-w-0">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
                     <Users className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm font-bold text-primary tracking-wide">Group Program</p>
-                    <h2 className="text-2xl md:text-3xl font-black">البرنامج الجماعي</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-black">البرنامج الجماعي</h2>
                   </div>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed mb-8 text-base md:text-lg">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-sm sm:text-base md:text-lg">
                   لو بتفهم إنجليزي لكن الكلام بيقف أول ما تتكلم — البرنامج ده مصمَّم عشانك.
                   مجموعات صغيرة، تفاعل حقيقي، ومتابعة مستمرة لحد ما تتكلم بثقة.
                 </p>
@@ -130,7 +130,7 @@ const PricingSection = () => (
               <div className="bg-secondary/40 border border-border rounded-2xl p-7 md:p-8 text-center lg:sticky lg:top-28">
                 <p className="text-sm font-bold text-muted-foreground mb-3">Level واحد · شهر كامل</p>
                 <div className="flex items-end justify-center gap-2 mb-2">
-                  <span className="text-5xl md:text-6xl font-black text-primary leading-none">٩٩٩</span>
+                  <span className="text-4xl md:text-6xl font-black text-primary leading-none">٩٩٩</span>
                   <span className="text-lg font-bold text-muted-foreground mb-1">جنيه</span>
                 </div>
                 <p className="text-muted-foreground mb-6">
@@ -159,16 +159,16 @@ const PricingSection = () => (
               </div>
               <div>
                 <p className="text-sm font-bold text-primary tracking-wide">VIP Mentorship</p>
-                <h2 className="text-2xl md:text-3xl font-black">برنامج الإرشاد الخاص</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-black">برنامج الإرشاد الخاص</h2>
               </div>
             </div>
 
-            <p className="text-muted-foreground leading-relaxed mb-8 text-base md:text-lg max-w-3xl">
+            <p className="text-muted-foreground leading-relaxed mb-6 text-sm sm:text-base md:text-lg max-w-3xl">
               لو عندك هدف محدد — شغل، interview، سفر، أو دراسة بالخارج —
               البرنامج ده اتعمل عشانك. ٨ جلسات كاملة، خطة مخصصة، ومتابعة فردية.
             </p>
 
-            <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-12 items-start">
+            <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-12 items-start">
               <FeatureList items={vipFeatures} />
 
               <div className="space-y-4">
