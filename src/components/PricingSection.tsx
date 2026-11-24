@@ -7,7 +7,7 @@ import {
   Crown,
   Clock,
   BookOpen,
-  MessageSquare,
+  LogIn,
   ExternalLink,
 } from "lucide-react";
 
@@ -68,7 +68,7 @@ const FeatureList = ({ items }: { items: string[] }) => (
 );
 
 const PricingSection = () => (
-  <section id="pricing" className="py-8 md:py-14 px-3 md:px-4 bg-background">
+  <section id="pricing" className="py-8 md:py-14 px-3 md:px-4 bg-background overflow-x-hidden">
     <div className="container mx-auto max-w-6xl">
       <Reveal>
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
@@ -89,7 +89,7 @@ const PricingSection = () => (
       <div className="space-y-8 md:space-y-10">
         {/* Group Program */}
         <Reveal>
-          <article className="bg-card border border-border rounded-3xl p-6 md:p-10 shadow-sm">
+          <article className="bg-card border border-border rounded-3xl p-4 sm:p-6 md:p-10 shadow-sm">
             <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-12 items-start">
               <div>
                 <div className="flex items-center gap-3 mb-5">
@@ -115,13 +115,13 @@ const PricingSection = () => (
                     ١٥ Level (١٢ أساسي + ٣ متقدم)
                   </span>
                   <a
-                    href="https://pre3-tasks.speakozy.workers.dev/"
+                    href="https://speakozy-learning.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline"
                   >
-                    <MessageSquare className="w-4 h-4" />
-                    مثال التاسكات اليومية
+                    <LogIn className="w-4 h-4" />
+                    تسجيل الدخول
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -152,7 +152,7 @@ const PricingSection = () => (
 
         {/* VIP Mentorship */}
         <Reveal delay={100}>
-          <article className="bg-card border border-border rounded-3xl p-6 md:p-10 shadow-sm">
+          <article className="bg-card border border-border rounded-3xl p-4 sm:p-6 md:p-10 shadow-sm">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
                 <Crown className="w-6 h-6 text-primary" />
