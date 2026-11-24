@@ -3,7 +3,7 @@ import { Reveal } from "@/hooks/useScrollReveal";
 const courses = [
   { img: "https://speakozy.netlify.app/img/1.png", title: "خطة دورة 4 أسابيع", desc: "برنامج مركز لمدة 4 أسابيع يتضمن 8 جلسات مباشرة منظمة." },
   { img: "https://speakozy.netlify.app/img/undraw_online-learning_tgmv.png", title: "جلسات زووم مباشرة", desc: "دروس مباشرة لمدة ساعتين على زووم مع التحدث والتفاعل الفوري." },
-  { img: "https://speakozy.netlify.app/img/undraw_group-video_k4jx.png", title: "مجموعات صغيرة وتقييم مجاني", desc: "محدودة من ٤ إلى ٨ طلاب مع تقييم مستوى مجاني قبل البدء." },
+  { img: "https://speakozy.netlify.app/img/undraw_group-video_k4jx.png", title: "مجموعات صغيرة وتقييم مجاني", desc: "محدودة من ٤ إلى ٦ طلاب مع تقييم مستوى مجاني قبل البدء." },
   { img: "https://speakozy.netlify.app/img/2.png", title: "طريقة تفاعلية وسعر معقول", desc: "تعلم تفاعلي 100٪ مع مناقشات وممارسة واقعية بسعر عادل." },
 ];
 

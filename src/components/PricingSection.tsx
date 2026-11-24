@@ -14,7 +14,7 @@ import {
 const groupFeatures = [
   "مناسب من سن ١٥ سنة فأكثر",
   "جلسات Online Live عبر Zoom",
-  "مجموعات صغيرة من ٤ إلى ٨ طلاب",
+  "مجموعات صغيرة من ٤ إلى ٦ طلاب",
   "كل Level: ٤ أسابيع · ٨ جلسات · جلستين أسبوعيًا",
   "مدة الجلسة ساعتان",
   "Vocabulary + Grammar + Idioms + Expressions",
@@ -22,6 +22,7 @@ const groupFeatures = [
   "تسجيل جميع الجلسات للمراجعة",
   "Daily Tasks + Homework + Continuous Feedback",
   "تقييم مستوى مجاني قبل البدء",
+  "سيستم كامل خاص بيك فيه كل اللي محتاجه علشان تطوّر من نفسك",
 ];
 
 const vipFeatures = [
@@ -108,22 +109,22 @@ const PricingSection = () => (
                 </p>
 
                 <FeatureList items={groupFeatures} />
+                <a
+                  href="https://speakozy-learning.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-4 mr-9 font-bold text-primary hover:underline"
+                >
+                  <LogIn className="w-4 h-4" />
+                  تسجيل الدخول
+                </a>
 
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 text-sm text-muted-foreground">
                   <span className="inline-flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-primary" />
                     ١٥ Level (١٢ أساسي + ٣ متقدم)
                   </span>
-                  <a
-                    href="https://speakozy-learning.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline"
-                  >
-                    <LogIn className="w-4 h-4" />
-                    تسجيل الدخول
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+
                 </div>
               </div>
 
@@ -137,7 +138,7 @@ const PricingSection = () => (
                   بدل <span className="line-through">١٬٥٠٠ جنيه</span>
                 </p>
                 <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
-                  الأماكن محدودة (٤–٨ طلاب) لضمان أفضل تجربة تعلم
+                  الأماكن محدودة (٤–٦ طلاب) لضمان أفضل تجربة تعلم
                 </p>
                 <Link to="/register" className="block">
                   <Button variant="hero" size="lg" className="w-full text-lg py-7 rounded-2xl">
